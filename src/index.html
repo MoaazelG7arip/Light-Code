@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/coding.png">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Light Code</title>
+</head>
+<body class="bg-color-primary text-color-white">
+    <header class="sticky top-0 bg-color-primary-dark border-b-2 border-color-gray z-50">
+        <div class="container flex justify-between items-center py-5">
+            <div class="logo text-3xl">Light<span class="text-color-secondary">Code</span></div>
+            <nav>
+                <ul class="hidden space-x-4 md:flex">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="bg-color-secondary p-3 rounded-lg hover:bg-color-secondary-dark hover:text-color-white transition duration-200">Free Trial</a></li>
+                </ul>
+                <button class="icon block md:hidden z-30">
+                    <i role="button" id="icon" class="fa-solid fa-bars text-3xl cursor-pointer relative z-[70]" onclick="toggleMenu()"></i>
+                </button>
+                <div id="menu" class="dropdown absolute top-0 left-0 w-[100vw] h-[100vh] bg-color-primary-dark hidden md:hidden z-50">
+                    <ul class="dropdown-menu absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 space-y-8 text-center text-2xl">
+                        <li><a href="#home" class="hover:underline">Home</a></li>
+                        <li><a href="#features" class="hover:underline">Features</a></li>
+                        <li><a href="#" class="hover:underline">Testimonial</a></li>
+                        <li><a href="#" class="hover:underline">Pricing</a></li>
+                        <li><a href="#" class="hover:underline">Blog</a></li>
+                        <li><a href="#" class="hover:underline">Contact</a></li>
+                        <li><a href="#" class="bg-color-secondary p-3 rounded-lg hover:bg-color-secondary-dark hover:text-color-white transition duration-200">Free Trial</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="relative">
+        <div class="blob-left"></div>
+        <div class="blob-right"></div>
+        <div class="container flex flex-col-reverse my-12 md:flex-row md:items-center md:space-x-10">
+            <div class="meta w-full text-center mt-12 space-y-8 md:w-1/2 md:text-start">
+                <h2 class="text-3xl">Awesome App for Your Financial</h2>
+                <p class="text-balance p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia ad possimus ducimus unde non nisi, quas dolorem distinctio odio doloribus iusto et sed, vitae ab alias reprehenderit velit, repudiandae consequatur.</p>
+                <button class="bg-color-secondary p-3 rounded-lg hover:bg-color-secondary-dark transition duration-200">Download App</button>
+            </div>
+            <div class="media w-full md:w-1/2">
+                <img src="./assets/img/hero4.png" alt="image">
+            </div>
+        </div>
+    </section>
+    <section id="features" class="py-12">
+        <div class="container">
+            <h2 class="head-h2">Our Future</h2>
+            <h3 class="head-h3">Easy To Manage Your App Payments By Our Apps</h3>
+            <div class="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 mt-12 w-full">
+                <div class="card">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h4>Expense Trackering</h4>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos fuga minus.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h4>Finance SnapShot</h4>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos fuga minus.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h4>Support 24/7</h4>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos fuga minus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="saving-money" class="relative py-12">
+        <div class="blob-left"></div>
+        <div class="blob-right"></div>
+        <div class="container flex flex-col items-center space-y-8 md:flex-row md:space-x-12">
+            <div class="media w-full text-center md:text-start md:w-1/2">
+                <img src="assets/img/hero3.png" alt="image">
+            </div>
+            <div class="meta w-full text-center space-y-5 md:text-start md:w-1/2">
+                <h2 class="head-h2">Saving Money</h2>
+                <h3 class="head-h3">Best Financing App To Save Your Money</h3>
+                <p class="text-gray-300 text-balance p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quam nobis fuga ipsum ab voluptatem voluptas magni ut, possimus, voluptatum, iusto dolor necessitatibus aperiam dolorum maiores vel ad quos! Ut.</p>
+                <button class="bg-color-secondary p-3 rounded-lg hover:bg-color-secondary-dark hover:text-color-white transition duration-200">Read More</button>
+            </div>
+        </div>
+    </section>
+    <section id="how-it-works" class="py-20">
+        <h2 class="head-h2">How it Works</h2>
+        <h3 class="head-h3">Grow Up Your Money Saving</h3>
+        <div class="cards text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 my-10">
+            <div class="card">
+                <span class="text-[7rem] px-5 bg-color-primary-dark rounded-lg">1</span>
+                <h3 class="font-bold">Install The App</h3>
+                <p class="text-gray-400 max-w-[60vw] mx-auto">We use a customized application specifically designed</p>
+            </div>
+            <div class="card relative">
+                <div class="absolute -left-[7rem] top-[3rem] hidden md:block">
+                    <img src="assets/img/line.png" alt="">
+                </div>
+                <span class="text-[7rem] px-5 bg-color-secondary rounded-lg">2</span>
+                <h3 class="font-bold">Setup Your Profile</h3>
+                <p class="text-gray-400 max-w-[60vw] mx-auto">We use a customized application specifically designed</p>
+            </div>
+            <div class="card relative">
+                <div class="absolute -left-[7rem] top-[5rem] hidden md:block">
+                    <img src="assets/img/line-bottom.png" alt="">
+                </div>
+                <span class="text-[7rem] px-5 bg-color-primary-dark rounded-lg">3</span>
+                <h3 class="font-bold">Enjoy The Features!</h3>
+                <p class="text-gray-400 max-w-[60vw] mx-auto">We use a customized application specifically designed</p>
+            </div>
+        </div>
+    </section>
+    <section id="testimonial" class="pt-20 pb-52">
+        <h2 class="head-h2">User Review</h2>
+        <h3 class="head-h3">What Clients Say About Our App After Use It</h3>
+        <div class="users flex flex-wrap justify-center gap-10 py-20">
+            <figure>
+                <img role="button" src="assets/img/user1.jpg" class="active" alt="user">
+            </figure>
+            <figure>
+                <img role="button" src="assets/img/user2.jpg" alt="user">
+            </figure>
+            <figure>
+                <img role="button" src="assets/img/user3.jpg" alt="user">
+            </figure>
+            <figure>
+                <img role="button" src="assets/img/user4.jpg" alt="user">
+            </figure>
+            <figure>
+                <img role="button" src="assets/img/user5.jpg" alt="user">
+            </figure>
+        </div>
+        <div class="review text-center space-y-3">
+            <p class="max-w-[70vw] font-bold mx-auto rev"></p>
+            <p class="text-color-secondary name"></p>
+            <p class="job"></p>
+        </div>
+    </section>
+    <div class="mt-32">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt quisquam nostrum provident voluptate laudantium excepturi. Veritatis earum sit aut ex odit. Incidunt quaerat ut placeat est vero totam molestiae laboriosam?
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

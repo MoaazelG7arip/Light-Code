@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+header nav ul li a {
+    @apply hover:text-color-secondary transition duration-200;
+}
+#features .cards .card{
+    @apply border-2 border-color-gray px-4 py-16 rounded-lg hover:bg-color-primary-dark text-center space-y-5;
+}
+#features .card i {
+    @apply text-color-white bg-color-secondary text-4xl p-5 rounded-lg;
+}
+.blob-left{
+    @apply absolute top-0 left-10 bg-color-blob w-60 h-60 rounded-full blur-3xl overflow-hidden opacity-50 -z-50;
+}
+.blob-right{
+    @apply absolute bottom-0 right-10 bg-color-white w-60 h-60 rounded-full blur-3xl overflow-hidden opacity-50 -z-50;
+}
+.head-h2{
+    @apply text-color-secondary text-center font-bold mb-2;
+}
+.head-h3{
+    @apply text-center mx-auto text-3xl max-w-[60vw] font-bold;
+}
+#testimonial figure img{
+    @apply w-24 h-24 rounded-full;
+}
+#testimonial figure img.active{
+    @apply border-2 border-color-secondary p-1 cursor-pointer;
+}
