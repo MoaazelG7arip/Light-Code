@@ -2,6 +2,23 @@
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+    width: .7rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ff7d3b;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border:2px solid #01051e;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 #testimonial .review.active{
     display: block;
@@ -27,4 +44,52 @@ html{
         -ms-transform: translateY(0rem);
         -o-transform: translateY(0rem);
     }
+}
+#pricing .cards{
+    perspective: 1000px;
+}
+#pricing .card{
+    position: relative;
+    border: 1px solid #333;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+#pricing .card div{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+#pricing .card .front-card{
+    padding: 2rem;
+}
+#pricing .card .back-card{
+    position: absolute;
+    padding: 2rem;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+#pricing .card.checked{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }

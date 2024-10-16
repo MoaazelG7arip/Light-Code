@@ -71,3 +71,9 @@ images.forEach(img=>{
         },0)
     })
 })
+
+function toggleSubscription(){
+  document.querySelectorAll('#pricing .cards .card').forEach(card => {
+    card.classList.toggle('checked');
+  });
+}
