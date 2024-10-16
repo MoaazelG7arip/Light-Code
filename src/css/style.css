@@ -93,3 +93,6 @@ body{
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
 }
+input,textarea{
+    color:#01051e;
+}
